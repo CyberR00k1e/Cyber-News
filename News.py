@@ -9,7 +9,7 @@ url = f"https://newsapi.org/v2/everything?q='cyberattack'&from={today}&sortBy=pu
 response = requests.get(url, verify=False).json()
 length = len(response["articles"])
 
-print(length)
+
 st.title("Today's News About Cyber Attacks")
 y=1
 col1, col2, col3 = st.columns(3,gap="large")
