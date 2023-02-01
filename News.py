@@ -4,7 +4,7 @@ import datetime
 import streamlit as st
 today = datetime.date.today()
 apikey=os.getenv("apikey")
-print(apikey)
+
 url = f"https://newsapi.org/v2/everything?q='cyberattack'&from={today}&sortBy=publishedAt&apiKey={apikey}"
 response = requests.get(url, verify=False).json()
 length = len(response["articles"])
