@@ -11,7 +11,9 @@ length = len(response["articles"])
 print(length)
 
 
-st.title("Today's News About Cyber Attacks")
+st.title(":blue[Today's News About Cyber Attacks]")
+st.write(":green[_Curated Cyber news by Sharat, pulled using APIs_ :sunglasses:]")
+st.write("")
 y=1
 
 #col1, col2, col3,col4, col5, col6 = st.columns([4,2,4,2,4,2])
@@ -34,7 +36,7 @@ for i in range(length):
                 if y==1:
                     with col1:
                         st.header(title)
-                        st.write(f"source - {source}")
+                        st.write(f":green[source - {source}]")
                         st.write(description)
                         st.write(url)
 
@@ -45,7 +47,7 @@ for i in range(length):
                 elif y==2:
                     with col3:
                         st.header(title)
-                        st.write(f"source - {source}")
+                        st.write(f":green[source - {source}]")
                         st.write(description)
                         st.write(url)
                     with col4:
@@ -55,7 +57,7 @@ for i in range(length):
                 else:
                     with col5:
                         st.header(title)
-                        st.write(f"source - {source}")
+                        st.write(f":green[source - {source}]")
                         st.write(description)
                         st.write(url)
                     with col6:
